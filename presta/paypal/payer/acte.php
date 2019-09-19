@@ -31,7 +31,7 @@ function presta_paypal_payer_acte_dist($config, $id_transaction, $transaction_ha
 		'id_transaction'=>$id_transaction,
 		'transaction_hash'=>$transaction_hash,
 		'sandbox' => paypal_is_sandbox($config),
-		'logo' => bank_trouver_logo('paypal','PAYPAL.gif'),
+		'logo' => bank_trouver_logo('paypal','paypal.svg'),
 		'config' => $config,
 	);
 
