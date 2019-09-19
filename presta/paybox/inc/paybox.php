@@ -57,14 +57,14 @@ function paybox_url_host($config){
 function paybox_available_cards($config){
 
 	$cartes_possibles = array(
-		'CB'=>'CB.gif',
-		'VISA'=>'VISA.gif',
-		'EUROCARD_MASTERCARD'=>'MASTERCARD.gif',
+		'CB'=>'cb.svg',
+		'VISA'=>'visa.svg',
+		'EUROCARD_MASTERCARD'=>'mastercard.svg',
 	);
 	if ($config['type']!=='abo'){
-		$cartes_possibles['E_CARD']='E-CB.gif';
-		$cartes_possibles['AMEX']='AMEX.gif';
-		$cartes_possibles['AURORE']='AURORE.gif';
+		$cartes_possibles['E_CARD']='e-cb.svg';
+		$cartes_possibles['AMEX']='amex.svg';
+		$cartes_possibles['AURORE']='aurore.svg';
 	}
 
 	return $cartes_possibles;

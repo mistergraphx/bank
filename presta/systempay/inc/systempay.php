@@ -63,11 +63,11 @@ function systempay_available_cards($config){
 
 	$mode = $config['presta'];
 	$cartes_possibles = array(
-		'CB'=>"CB.gif",
-		'VISA'=>"VISA.gif",
-		'MASTERCARD'=>"MASTERCARD.gif",
-		'E-CARTEBLEUE' => "E-CB.gif",
-		'AMEX' => "AMEX.gif",
+		'CB'=>"cb.svg",
+		'VISA'=>"visa.svg",
+		'MASTERCARD'=>"mastercard.svg",
+		'E-CARTEBLEUE' => "e-cb.svg",
+		'AMEX' => "amex.svg",
 	);
 
 	if ($config['service']=="osb"){
@@ -77,22 +77,22 @@ function systempay_available_cards($config){
 	}
 	else {
 		if ($config['type']!=='abo'){
-			$cartes_possibles['MAESTRO'] = "MAESTRO.gif";
-			$cartes_possibles['VISA_ELECTRON'] = "VISAELECTRON.gif";
+			$cartes_possibles['MAESTRO'] = "maestro.svg";
+			$cartes_possibles['VISA_ELECTRON'] = "visa-electron.svg";
 			//$cartes_possibles['PAYPAL']="PAYPAL.gif";
 			//$cartes_possibles['V_ME']="VME.gif";
 		}
 	}
 	if ($config['service']=='payzen'){
 		// les SEPA, abo ou non
-		$cartes_possibles['SDD'] = "SEPA_SDD.gif";
+		$cartes_possibles['SDD'] = "sepa-sdd.svg";
 		if ($config['type']!=='abo'){
-			$cartes_possibles['PAYLIB'] = "PAYLIB.gif";
-			$cartes_possibles['ONEY'] = "ONEY.gif";
-			$cartes_possibles['JCB'] = "JCB.gif";
-			$cartes_possibles['DINERS'] = "DINERS.gif";
-			$cartes_possibles['SOFORT_BANKING'] = "SOFORT.gif";
-			$cartes_possibles['IDEAL'] = "IDEAL.gif";
+			$cartes_possibles['PAYLIB'] = "paylib.svg";
+			$cartes_possibles['ONEY'] = "oneay.svg";
+			$cartes_possibles['JCB'] = "jcb.svg";
+			$cartes_possibles['DINERS'] = "diners.svg";
+			$cartes_possibles['SOFORT_BANKING'] = "sofort.svg";
+			$cartes_possibles['IDEAL'] = "ideal.svg";
 
 			// et les e-cheques vacances
 			// $cartes_possibles['E_CV'] = "E_CV.gif";

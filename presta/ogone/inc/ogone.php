@@ -52,9 +52,9 @@ function ogone_url_serveur($config){
 function ogone_available_cards($config){
 
 	$cartes_possibles = array(
-		'VISA'=>'VISA.gif',
-		'MasterCard'=>'MASTERCARD.gif',
-		'American Express'=>'AMEX.gif',
+		'VISA'=>'visa.svg',
+		'MasterCard'=>'mastercard.svg',
+		'American Express'=>'amex.svg',
 	);
 
 	return $cartes_possibles;

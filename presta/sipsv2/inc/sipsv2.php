@@ -78,10 +78,10 @@ function sipsv2_available_cards($config){
 
 	$mode = $config['presta'];
 	$cartes_possibles = array(
-		'CB'=>"CB.gif",
-		'VISA'=>"VISA.gif",
-		'MASTERCARD'=>"MASTERCARD.gif",
-		'AMEX' => "AMEX.gif",
+		'CB'=>"cb.svg",
+		'VISA'=>"visa.svg",
+		'MASTERCARD'=>"mastercard.svg",
+		'AMEX' => "amex.svg",
 	);
 
 	return $cartes_possibles;
